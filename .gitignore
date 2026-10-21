@@ -1,0 +1,11 @@
+
+node_modules/
+**/node_modules/
+.env
+.env.*
+!.env.example
+dist/
+**/dist/
+.vite/
+coverage/
+npm-debug.log*
