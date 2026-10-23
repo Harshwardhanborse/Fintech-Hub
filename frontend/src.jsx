@@ -2,7 +2,7 @@ import React,{useCallback,useEffect,useMemo,useState}from"react";
 import{createRoot}from"react-dom/client";
 import{Wallet,ReceiptText,Target,TrendingUp,TrendingDown,Plus,Trash2,Lightbulb,PiggyBank,ChartNoAxesCombined,CircleDollarSign,LogOut,ArrowUpRight,ShieldCheck}from"lucide-react";
 import"./style.css";
-const API="http://localhost:5000/api",money=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(Number(n)||0),today=()=>new Date().toISOString().slice(0,10);
+const API="https://fintech-hub.onrender.com/",money=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(Number(n)||0),today=()=>new Date().toISOString().slice(0,10);
 const brokerLinks=[{name:"Zerodha",url:"https://zerodha.com/"},{name:"Upstox",url:"https://upstox.com/"},{name:"Groww",url:"https://groww.in/"},{name:"Kite Connect API",url:"https://kite.trade/"},{name:"Upstox API docs",url:"https://upstox.com/developer/api-documentation/"}];
 const examples=[
  {symbol:"NIFTY 50 index fund",kind:"Index fund / ETF",risk:"Moderate",note:"Broad-market exposure; review costs, tracking error and fund documents."},
